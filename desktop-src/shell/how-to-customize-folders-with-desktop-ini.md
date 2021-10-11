@@ -18,7 +18,7 @@ Folders are normally displayed with the standard folder icon. A common use of th
 
 **Use the following procedure to customize a folder's style with Desktop.ini:**
 
-1.  Use [**PathMakeSystemFolder**](/windows/desktop/api/Shlwapi/nf-shlwapi-pathmakesystemfoldera) to make the folder a system folder. This sets the read-only bit on the folder to indicate that the special behavior reserved for Desktop.ini should be enabled. You can also make a folder a system folder from the command line by using **attrib +s** *FolderName*.
+1.  Use [**PathMakeSystemFolder**](/windows/desktop/api/Shlwapi/nf-shlwapi-pathmakesystemfoldera) to make the folder a system folder. This sets the read-only bit on the folder to indicate that the special behavior reserved for Desktop.ini should be enabled. You can also make a folder a system folder from the command line by using **attrib +r** *FolderName*.
 2.  Create a Desktop.ini file for the folder. You should mark it as *hidden* and *system* to ensure that it is hidden from normal users.
 3.  Make sure the Desktop.ini file that you create is in the Unicode format. This is necessary to store the localized strings that can be displayed to users.
 
